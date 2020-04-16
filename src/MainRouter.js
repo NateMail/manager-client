@@ -6,6 +6,7 @@ import Home from "../src/Components/Home";
 import SignUp from "../src/Components/user/SignUp";
 import SignIn from "../src/Components/user/SignIn";
 import NewBank from "../src/Components/finance/bank/NewBank";
+import GetBank from "../src/Components/finance/bank/GetBank";
 
 const MainRouter = () => (
   <div>
@@ -15,6 +16,7 @@ const MainRouter = () => (
       <Route exact path="/signup" component={SignUp} />
       <Route exact path="/signin" component={SignIn} />
       <PrivateRoute exact path="/bank/new/:userId" component={NewBank} />
+      <PrivateRoute exact path="/bank/by/:userId" component={GetBank} />
     </Switch>
   </div>
 );
