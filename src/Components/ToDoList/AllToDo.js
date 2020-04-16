@@ -56,8 +56,6 @@ class AllToDos extends Component {
     if (redirectToSignin) return <Redirect to="/signin" />;
     if (redirectToCreateToDo) return <Redirect to={`/todo/new/${userId}`} />;
 
-    console.log(todos);
-
     return (
       <div>
         {todos.map(function (todo, idx) {

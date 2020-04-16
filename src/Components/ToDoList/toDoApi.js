@@ -29,7 +29,7 @@ export const getToDo = (userId, token) => {
 };
 
 export const singleToDo = (toDoId, token) => {
-  return fetch(`http://localhost:8000/${toDoId}`, {
+  return fetch(`http://localhost:8000/todo/${toDoId}`, {
     method: "GET",
     headers: {
       Authorization: `Bearer ${token}`,
