@@ -1,2 +1,2 @@
 1. Fix .env files so they work 
-
+2. Date format on Todo list and show completed checkbox 
