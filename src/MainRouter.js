@@ -11,6 +11,7 @@ import GetBank from "../src/Components/finance/bank/GetBank";
 import NewToDo from "../src/Components/ToDoList/NewToDo";
 import AllToDo from "../src/Components/ToDoList/AllToDo";
 import SingleToDo from "../src/Components/ToDoList/SingleToDo";
+import EditToDo from "../src/Components/ToDoList/EditToDo";
 
 const MainRouter = () => (
   <div>
@@ -24,6 +25,7 @@ const MainRouter = () => (
       <PrivateRoute exact path="/todo/new/:userId" component={NewToDo} />
       <PrivateRoute exact path="/todo/by/:userId" component={AllToDo} />
       <PrivateRoute exact path="/todo/:toDoId" component={SingleToDo} />
+      <PrivateRoute exact path="/todo/edit/:toDoId" component={EditToDo} />
     </Switch>
   </div>
 );
