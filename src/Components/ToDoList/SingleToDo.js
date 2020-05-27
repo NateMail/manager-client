@@ -36,6 +36,9 @@ class SingleToDo extends Component {
         <ListGroup>
           <ListGroupItem className="card-text">{todo.task}</ListGroupItem>
           <ListGroupItem className="card-text">{todo.created}</ListGroupItem>
+          <ListGroupItem className="card-text">
+            Completed: {todo.completed ? "Completed" : "Not completed"}
+          </ListGroupItem>
         </ListGroup>
         <br />
 
